@@ -1,0 +1,22 @@
+name: Sample Workflow
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: An optional string workflow input
+        type: string
+      # has_admin_role:
+      #   description: An optional boolean workflow input
+      #   type: boolean
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a script printing environment vars to stdout
+        run: |
+          node -e 'console.log(`::notice::NAME_INPUT: ${process.env.NAME_INPUT}`)'
+          node -e 'console.log(`::notice::GH_INPUT_CONTEXT: ${process.env.GH_INPUT_CONTEXT}`)'
+        env:
+          NAME_INPUT: ${{ inputs.name }}
+          GH_INPUT_CONTEXT: ${{ toJSON(github.event.inputs) }}
