@@ -7,7 +7,7 @@ on:
         type: string
       has_admin_role:
         description: An optional boolean workflow input
-        default: false
+        default: true
         type: boolean
 
 jobs:
