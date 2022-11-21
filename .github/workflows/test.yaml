@@ -5,9 +5,9 @@ on:
       name:
         description: An optional string workflow input
         type: string
-      # has_admin_role:
-      #   description: An optional boolean workflow input
-      #   type: boolean
+      has_admin_role:
+        description: An optional boolean workflow input
+        type: boolean
 
 jobs:
   main:
