@@ -16,7 +16,7 @@ on:
         description: An optional boolean workflow input
         default: true
         type: boolean
-        required: false
+        required: true
  
 
 jobs:
