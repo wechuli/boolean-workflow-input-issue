@@ -13,8 +13,7 @@ on:
           - bananas
           - pineapples
       has_admin_role:
-        description: An optional boolean workflow input
-        default: true
+        description: An optional boolean workflow input 
         type: boolean
         required: true
  
