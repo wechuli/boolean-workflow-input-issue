@@ -2,12 +2,11 @@ name: Sample Workflow
 on:
   workflow_dispatch:
     inputs:
-      name:
-        description: An optional string workflow input
-        type: string
       fruits:
         description: specify a fruit
         type: choice
+        default: apples
+        required: false
         options:
           - apples
           - oranges
@@ -17,6 +16,7 @@ on:
         description: An optional boolean workflow input
         default: true
         type: boolean
+        required: false
 
 jobs:
   main:
