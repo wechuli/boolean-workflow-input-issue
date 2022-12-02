@@ -4,8 +4,7 @@ on:
     inputs:
       fruits:
         description: specify a fruit
-        type: choice
-        default: apples
+        type: choice    
         required: false
         options:
           - apples
@@ -15,7 +14,7 @@ on:
       has_admin_role:
         description: An optional boolean workflow input 
         type: boolean
-        default: false
+        default: true
         required: true
  
 
