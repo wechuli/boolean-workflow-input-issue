@@ -5,6 +5,14 @@ on:
       name:
         description: An optional string workflow input
         type: string
+      fruits:
+        description: specify a fruit
+        type: choice
+        options:
+          - apples
+          - oranges
+          - bananas
+          - pineapples
       has_admin_role:
         description: An optional boolean workflow input
         default: true
