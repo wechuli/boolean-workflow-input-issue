@@ -4,7 +4,8 @@ on:
     inputs:
       has_admin_role:
         description: An optional boolean workflow input 
-        type: boolean    
+        type: boolean
+        default: true
      
  
 
